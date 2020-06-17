@@ -13,7 +13,7 @@
 body {
 
 background-image: url("ymz_n.png");
-background-size:1080px 2129px;
+background-size:cover;
 background-repeat:no-repeat;
 
 }
@@ -26,7 +26,7 @@ background-repeat:no-repeat;
 <body> 
 　
 	
-<div id="time" style="width:50%;float:left;"></div>
+<div id="time" style="left:10px;position:absolute;top:50px"></div>
 
 <div id="second" style="width:50%;float:left;"></div>
 	
@@ -65,10 +65,10 @@ document.getElementById("second").innerHTML= hours + ":" + minutes +":" + second
 
 };
 
-document.getElementById("time").style.fontSize="2.0rem";
+document.getElementById("time").style.fontSize="4.0rem";
 document.getElementById("time").style.fontWeight="bold";
 
-document.getElementById("second").style.fontSize="2.7rem";
+document.getElementById("second").style.fontSize="5rem";
 document.getElementById("second").style.fontWeight="bold";
 
 setInterval("time()",1000);
