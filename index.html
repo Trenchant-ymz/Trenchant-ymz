@@ -7,47 +7,6 @@
     <meta charset="utf-8">
 
     <title>交大校园码</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-
-<style type="text/css">  
-
-
-html{
-font-size:16px;
-width:320px;
-height:100%;
-margin: 0 auto;
-} 
-
-section .title{
-
-font-weight:bold;
-font-size:1.2rem;
-color:#929699;
-}
-
-section{
-padding-left:1rem;
-}
-.info{
-color:white;
-font-size:1.2rem;
-font-weight:bold；
-}
-
-
-.footer{
-    position:fixed;
-    bottom: 0;  
-    padding-bottom:10px;  
-    background:white;
- 
-}
-
-
-
-</style> 
-
 
   </head>
 
@@ -57,86 +16,11 @@ font-weight:bold；
 
   <header>
         <div>
-   	 <img src="1.png" alt="My test image1" >
+   	 <img src="ymz.jpg" alt="My test image1" >
 	</div>
 
   </header>
 
-
-
-  <section>
-	
-<p class="title"> 当前时间</p>
-
-<div id="time" style="width:50%;float:left;"></div>
-
-<div id="second" style="width:50%;float:left;"></div>
-
-
-<p>已于2020-05-23 13:37:12完成报到登记</p>
-
-<p>外出时间<font color="#d1bf8d">2020-05-30 14:22</font>至<font color="#d1bf8d">2020-08-31 22:00</font></p>
-
-   	 
-        <div align="center">
-   	 
-	<img src="4.png" alt="My test image1"  class="image1">
-
-	</div>	
-	<p align="center">校园最安全，外出有风险</p>    
-
-</section>
-
-	<div class="footer" >
-  	<img src="3.png" alt="My test image1"  class="image1">
-	
-	</div>	
-
-
-
-<script type="text/javascript">
- 
-function time(){
-var vWeek,vWeek_s,vDay;
-
-var date =  new Date();
-
-month = date.getMonth() + 1;
-
-day = date.getDate();
-if(day<10){
-       day= '0'+day;
-}
-
-hours = date.getHours();
-if(hours<10){
-       hours= '0'+hours;
-}
-
-minutes = date.getMinutes();
-if(minutes<10){
-       minutes= '0'+minutes;
-}
-seconds = date.getSeconds();
-if(seconds<10){
-       seconds= '0'+seconds;
-}
-vWeek_s = date.getDay();
-
-document.getElementById("time").innerHTML =  "0"+month + "月" + day + "日" ;
-document.getElementById("second").innerHTML= hours + ":" + minutes +":" + seconds  ;
-
-};
-
-document.getElementById("time").style.fontSize="2.0rem";
-document.getElementById("time").style.fontWeight="bold";
-
-document.getElementById("second").style.fontSize="2.7rem";
-document.getElementById("second").style.fontWeight="bold";
-
-setInterval("time()",1000);
-
-</script>
 
   </body>
 
