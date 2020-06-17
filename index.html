@@ -21,6 +21,54 @@ width:100%;
         <div>
    	 <img src="ymz_c.jpg" alt="My test image1" >
 	</div>
+	
+<div id="time" style="width:50%;float:left;"></div>
 
- </body>
+<div id="second" style="width:50%;float:left;"></div>
+	
+	
+<script type="text/javascript">
+ 
+function time(){
+var vWeek,vWeek_s,vDay;
+
+var date =  new Date();
+
+month = date.getMonth() + 1;
+
+day = date.getDate();
+if(day<10){
+       day= '0'+day;
+}
+
+hours = date.getHours();
+if(hours<10){
+       hours= '0'+hours;
+}
+
+minutes = date.getMinutes();
+if(minutes<10){
+       minutes= '0'+minutes;
+}
+seconds = date.getSeconds();
+if(seconds<10){
+       seconds= '0'+seconds;
+}
+vWeek_s = date.getDay();
+
+document.getElementById("time").innerHTML =  "0"+month + "月" + day + "日" ;
+document.getElementById("second").innerHTML= hours + ":" + minutes +":" + seconds  ;
+
+};
+
+document.getElementById("time").style.fontSize="2.0rem";
+document.getElementById("time").style.fontWeight="bold";
+
+document.getElementById("second").style.fontSize="2.7rem";
+document.getElementById("second").style.fontWeight="bold";
+
+setInterval("time()",1000);
+
+</script>
+	</body>
   </html>
