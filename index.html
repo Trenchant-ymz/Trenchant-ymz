@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
 
@@ -7,40 +7,38 @@
     <meta charset="utf-8">
 
     <title>交大校园码</title>
-
-     <link href='http://cdn.repository.webfont.com/webfonts/nomal/136277/47008/5e64df17f629d80aa4383788.css' rel='stylesheet' type='text/css' />
-
-<link href='http://cdn.repository.webfont.com/webfonts/nomal/136277/46975/5e64e07cf629d80aa4383789.css' rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 
 <style type="text/css">  
+
+
 html{
-font-size:18px;
-width:100%;
+font-size:35px;
+width:320px;
 height:100%;
+margin: 0 auto;
 } 
 
 section .title{
 
+font-weight:bold;
 font-size:1.2rem;
 color:#929699;
-
 }
-/*
-header{
-background:#7547c3;
 
-}*/
+section{
+padding-left:1rem;
+}
 .info{
 color:white;
 font-size:1.2rem;
 font-weight:bold；
 }
 
-footer{
+
+.footer{
     position:fixed;
-    bottom: 0px; 
-    width:100%;
-    height:30px;   
+    bottom: 0;  
     padding-bottom:10px;  
     background:white;
  
@@ -58,14 +56,10 @@ footer{
 
 
   <header>
-        <div  >
-   	 <img src="1.jpg" alt="My test image1"  class="image1">
+        <div>
+   	 <img src="1.png" alt="My test image1" >
 	</div>
 
-	<!--<div class="info" style="width:80%;float:right;">	
-		<p>3119105149 邹丽芳 研究生</p>
-		<p>电子信息学部/杨良伟班</p>
-	</div>-->
   </header>
 
 
@@ -74,51 +68,41 @@ footer{
 	
 <p class="title"> 当前时间</p>
 
-<div id="time" style="width:15%;float:left;"></div>
+<div id="time" style="width:50%;float:left;"></div>
 
-<div id="second" style="width:85%;float:left;"></div>
+<div id="second" style="width:50%;float:left;"></div>
 
 
 <p>已于2020-05-23 13:37:12完成报到登记</p>
+
 <p>外出时间<font color="#d1bf8d">2020-05-30 14:22</font>至<font color="#d1bf8d">2020-08-31 22:00</font></p>
 
-<figure >
    	 
-        <div  align="center">
-   	 <!--<img src="./img/2.png" alt="My test image1"  class="image1">-->
-	<img src="3.jpg" alt="My test image1"  class="image1">
+        <div align="center">
+   	 
+	<img src="3.png" alt="My test image1"  class="image1">
 
 	</div>	
-	<p align="center">校园最安全，外出有风险</p>
- </figure>
-      
+	<p align="center">校园最安全，外出有风险</p>    
 
-  </section>
+</section>
 
-
-
-
-  <footer>
-
-
-	<div  align="center">
-   	 <img src="2.jpg" alt="My test image1"  class="image1">
+	<div class="footer" >
+  	<img src="2.png" alt="My test image1"  class="image1">
 	
 	</div>	
- 
 
-
-
-  </footer>
 
 
 <script type="text/javascript">
+ 
 function time(){
 var vWeek,vWeek_s,vDay;
 
 var date =  new Date();
 
 month = date.getMonth() + 1;
+
 day = date.getDate();
 if(day<10){
        day= '0'+day;
@@ -144,12 +128,10 @@ document.getElementById("second").innerHTML= hours + ":" + minutes +":" + second
 
 };
 
-document.getElementById("time").style.fontSize="2rem";
-
+document.getElementById("time").style.fontSize="2.0rem";
 document.getElementById("time").style.fontWeight="bold";
 
-document.getElementById("second").style.fontSize="2.5rem";
-
+document.getElementById("second").style.fontSize="2.7rem";
 document.getElementById("second").style.fontWeight="bold";
 
 setInterval("time()",1000);
